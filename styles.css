@@ -12,3 +12,11 @@
 .inter {
     font-family: "Inter", sans-serif;
 }
+.hr2{
+  border: 2px  dashed;
+  color: #0307124D;
+}
+.hr3{
+  border: 2px  dashed;
+  color: #FFFFFF4D;
+}
