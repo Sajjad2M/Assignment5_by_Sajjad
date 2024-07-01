@@ -34,7 +34,7 @@
                     <p class="text-white inter lg:font-normal lg:text-lg font-extralight text-[12px] mt-0 lg:mt-8 text-center">Yes, you can run unit tests and view the results directly within the app. <br>The integrated testing features allow for a streamlined .LOREM</p>
                   </div>
                   <div class=" justify-center items-center flex">
-                    <button class="flex bg-[#1DD1001A] lg:w-[170px] w-32   lg:h-16 h-10 lg:rounded-xl rounded-lg lg:font-bold font-bold lg:text-[20px] text-[16px] raleway items-center justify-center  bg-[#1DD100] mt-2 lg:mt-8 text-[#030712] " id="btn2">Bus Tickets</button>
+                    <button class="flex bg-[#1DD1001A] lg:w-[170px] w-32   lg:h-16 h-10 lg:rounded-xl rounded-lg lg:font-bold font-bold lg:text-[20px] text-[16px] raleway items-center justify-center  bg-[#1DD100] mt-2 lg:mt-8 text-[#030712] " id="btn-buy" onclick="page1()">Buy Tickets</button>
                   </div>
                  
 
@@ -116,8 +116,8 @@
 
             
     </header>
-    <!-- ---------------- -->
-     <main class="bg-[#F7F8F8] lg:rounded-t-[88px] rounded-t-6 border-t-4 border-[#1DD100] h-auto ">
+    <!-- ---------GOFast------- -->
+     <main class="bg-[#F7F8F8] lg:rounded-t-[88px] rounded-t-6 border-t-4 border-[#1DD100] h-auto " id="goFast">
 
        
 
@@ -143,7 +143,7 @@
                 <!-- btm -->
                  <div class="grid items-center">
                     <button class="flex gap-2 w-[180px] h-14 bg-[#1DD10026] rounded-xl items-center justify-center"><img src="images/seat-green.png" alt="">
-                        <p class="text-lg font-medium text-[#1DD100]">40 Seats left</p>
+                        <p class="text-lg font-medium text-[#1DD100]"><span id="fourty">40</span> Seats left</p>
                     </button>
                  </div>
             </div>
@@ -194,21 +194,236 @@
         
 
      </section>
-    
-        
-        
-
-
-
-        <!-- ----------MaAIL----- -->
-         <!-- <section class="w-full">
-                <div class=" ml-10">
+    <!-- ----------MaAIL----- -->
+         <section class="w-full bg-white mt-6 p-8 rounded-3xl">
+               <section class="lg:flex  ">
+                <div class="w-full ">
                     <h1 class="Text-[#030712] text-2xl font-semibold mb-6">Select Your Seat</h1>
-                    <hr class="hr2">
+                    <hr class="hr2 text-[#03071233]">
+
+                    <div class="flex my-4 justify-between h-auto">
+                        <div class="flex gap-2 justify-center">
+                            <img src="images/seat-gray.png" alt="">
+                            <p class="text-lg font-medium text-[#03071280] text-end">Available</p>
+                        </div>
+                        <div class="flex gap-2  ">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <p class="text-lg font-medium text-[#1DD100] text-end">Selected</p>
+                        </div>
+                    </div>
+                    <hr class="hr2 text-[#03071233]">
+                    <div class="mt-4 justify-end flex ">
+   
+                        <button class="w-28 h-14 rounded-xl bg-[#0307121A] flex justify-center items-center "> 
+                            <img src="images/Vector (1).png" alt="" class=" ">
+                        </button>
+                    </div>
+                  
+                   <section class="flex gap-16 mt-6 w-full" >
+                    <section class="grid grid-cols-1 gap-8  inter">
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter ">A</p>
+                         <button id="A1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>A1</p></button>
+                         <button id="A2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>A2</p></button>
+                        </div>
+                
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">B</p>
+                         <button id="B1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>B1</p></button>
+                         <button id="B2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>B2</p></button>
+                        </div>
+                    
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">C</p>
+                         <button id="C1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>C1</p></button>
+                         <button id="C2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>C2</p></button>
+                        </div>
+                    
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">D</p>
+                         <button id="D1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>D1</p></button>
+                         <button id="D2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>D2</p> </button>
+                        </div>
+                    
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">E</p>
+                         <button id="E1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>E1</p></button>
+                         <button id="E2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>E2</p></button>
+                        </div>
+                    
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">F</p>
+                         <button id="F1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>F1</p></button>
+                         <button id="F2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>F2</p></button>
+                        </div>
+ 
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">G</p>
+                         <button id="G1"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>G1</p></button>
+                         <button id="G2"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>G2</p></button>
+                        </div>
+ 
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">H</p>
+                         <button id="H1"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>H1</p></button>
+                         <button id="H2"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>H2</p></button>
+                        </div>
+ 
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">I</p>
+                         <button id="I1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>I1</p></button>
+                         <button id="I2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>I2</p></button>
+                        </div>
+ 
+                        <div class="flex gap-8 items-center">
+                         <p class=" text-[#03071280] text-lg font-medium inter  ">J</p>
+                         <button id="J1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40 inter"><p>J1</p></button>
+                         <button id="J2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>J2</p></button>
+                        </div>
+ 
+ 
+                         
+ 
+                     </section>
+                     <section class="">
+                        <section class="grid grid-cols-1 gap-8  inter "  >
+                            <div class="flex gap-8 items-center">
+                           
+                             <button id="A3" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>A3</p></button>
+                             <button id="A4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>A4</p></button>
+                            </div>
+                    
+                            <div class="flex gap-8 items-center">
+                           
+                             <button id="B3" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>B3</p></button>
+                             <button id="B4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>B4</p></button>
+                            </div>
+                        
+                            <div class="flex gap-8 items-center">
+                             
+                             <button id="C3" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>C3</p></button>
+                             <button id="C4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>C4</p></button>
+                            </div>
+                        
+                            <div class="flex gap-8 items-center">
+                             
+                             <button id="D3" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>D3</p></button>
+                             <button id="D4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>D4</p> </button>
+                            </div>
+                        
+                            <div class="flex gap-8 items-center">
+                           
+                             <button id="E3" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>E3</p></button>
+                             <button id="E4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>E4</p></button>
+                            </div>
+                        
+                            <div class="flex gap-8 items-center">
+                             
+                             <button id="F3" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>F3</p></button>
+                             <button id="F4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>F4</p></button>
+                            </div>
+     
+                            <div class="flex gap-8 items-center">
+                         
+                             <button id="G3"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>G3</p></button>
+                             <button id="G4"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>G4</p></button>
+                            </div>
+     
+                            <div class="flex gap-8 items-center">
+                            
+                             <button id="H3"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>H3</p></button>
+                             <button id="H4"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>H4</p></button>
+                            </div>
+     
+                            <div class="flex gap-8 items-center">
+                           
+                             <button id="I3" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>I3</p></button>
+                             <button id="I4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>I4</p></button>
+                            </div>
+     
+                            <div class="flex gap-8 items-center">
+                             
+                             <button id="J3" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40 inter" ><p>J3</p></button>
+                             <button id="J4" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>J4 </p></button>
+                            </div>
+                    </section>
+                    </section>
+                     
+                   </section>
+                    </div>
+                    <hr class="text-[#0307124D] border-2 border-dashed h-[985px] mx-8 mt-3 lg:block hidden">
+                <!-- FORM -->
+                <div class=" w-[70%] mt-10 lg:mt-0">
+                    <h1 class="Text-[#030712] text-2xl font-semibold mb-6">Select Your Seat</h1>
+                <hr class="  mb-6">
+
+                <div class="flex justify-between mx-6">
+                    <div class="flex gap-1 ">
+                        <p class="text-[16px] text-[#030712] font-semibold inter">Seat</p>
+                      <span class="">
+                        <span id="sup" class="bg-[#1DD100] inter font-bold text-[12px] rounded-[5px] pl-2 pr-2 py-[1px] text-white grid items-center  justify-center">0</span>
+                      </span>
+                    </div>
+                    <p class="text-[16px] text-[#030712] font-semibold inter ">Class</p>
+                    <p class="text-[16px] text-[#030712] font-semibold inter ">Price</p>
+                </div>
+                <hr class=" border-dashed  my-4 mx-6">
+               <section class="text-[16px] text-[#03071299] font-normal inter mx-6  grid grid-cols-3 gap-3 gap-x-[70px]" id="eco2">
+                
+               
+               </section>
+                <hr class=" border-dashed  my-3 mx-6">
+                <div class="flex justify-between mx-6 mt-2">
+                    <div class="flex gap-1 ">
+                        <p class="text-[16px] text-[#030712] font-semibold inter">Total Price</p>
+                        
+                    </div>
+                   
+                    <p class="text-[16px] text-[rgb(3,7,18)] font-semibold inter " id="totalPrice">0</p>
+                </div>
+                <div class="mx-8 mt-4 relative ">
+                    <input type="text" placeholder="Have a coupon" class="w-full py-5 pl-6 rounded-xl border-2  " id="input1">
+                    <div class="absolute top-0 right-0 pt-2  pr-2">
+                        <button class=" bg-[#1DD100] rounded-lg py-3 px-[18px] text-white text-lg font-semibold" id="app" disabled onclick="applyBtn()">Apply</button>
+                    </div>
+                    <div class="flex justify-between mt-6">
+                        <p class="text-[#030712] font-semibold text-[16px] inter">Grand Total</p>
+                        <p id="grand" class="text-[#030712] font-semibold text-[16px] inter">0</p>
+                    </div>
                    
                 </div>
+                <div class="mt-14 inter ">
+                    <h2 class="tex-[16px] font-semibold text-[#030712]">Passenger Name*</h2>
+                    <input type="text" placeholder="Enter your name " class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] text-[#03071266] mt-4 bg-[#F7F8F8]" >
 
-         </section> -->
+                    <h2 class="tex-[16px] font-semibold text-[#030712] mt-7">phone number*</h2>
+                    <input type="number" placeholder="Enter your phone number" class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] bg-[#F7F8F8] text-[#03071266] mt-4" >
+
+                    <h2 class="tex-[16px] font-semibold text-[#030712] mt-6">Email id</h2>
+                    <input type="email" placeholder="Enter your email id " class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] text-[#03071266] mt-4 bg-[#F7F8F8]" >
+
+                    <button class="w-full h-16 bg-[#1DD100] rounded-2xl my-6 text-xl font-extrabold  text-white" disabled>Next</button>
+                    <div class="flex justify-around inter text-[#03071299] text-[16px] font-normal">
+                        <a href="">Terms and Conditions</a>
+                        <a href="">Cancellation Policy</a>
+                    </div>
+
+                </div>
+               
+
+
+
+
+                 </div>
+                
+               </section>
+
+
+
+
+               
+         </section>
+       
 
         </section>
   </main>
@@ -271,7 +486,7 @@
 
   
 
-    <script src=""></script>
-    <script src=""></script>
+    <script src="goFast.js"></script>
+    <script src="component.js"></script>
 </body>
 </html>
