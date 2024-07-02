@@ -278,7 +278,7 @@
                         <div class="flex gap-8 items-center">
                          <p class=" text-[#03071280] text-lg font-medium inter  ">J</p>
                          <button id="J1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40 inter"><p>J1</p></button>
-                         <button id="J2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>J2</p></button>
+                         <button id="J2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40" ><p>J2</p></button>
                         </div>
  
  
@@ -331,7 +331,7 @@
      
                             <div class="flex gap-8 items-center">
                             
-                             <button id="H3"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>H3</p></button>
+                             <button id="H1"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>H3</p></button>
                              <button id="H4"  class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>H4</p></button>
                             </div>
      
@@ -382,9 +382,9 @@
                     <p class="text-[16px] text-[rgb(3,7,18)] font-semibold inter " id="totalPrice">0</p>
                 </div>
                 <div class="mx-8 mt-4 relative ">
-                    <input type="text" placeholder="Have a coupon" class="w-full py-5 pl-6 rounded-xl border-2  " id="input1">
+                    <input type="text" placeholder="Have a coupon" class="w-full py-5 pl-6 rounded-xl border-2  " id="input1" disabled>
                     <div class="absolute top-0 right-0 pt-2  pr-2">
-                        <button class=" bg-[#1DD100] rounded-lg py-3 px-[18px] text-white text-lg font-semibold" id="app" disabled onclick="applyBtn()">Apply</button>
+                        <button class=" bg-[#1DD100] rounded-lg py-3 px-[18px] text-white text-lg font-semibold" id="app" disabled>Apply</button>
                     </div>
                     <div class="flex justify-between mt-6">
                         <p class="text-[#030712] font-semibold text-[16px] inter">Grand Total</p>
@@ -394,15 +394,15 @@
                 </div>
                 <div class="mt-14 inter ">
                     <h2 class="tex-[16px] font-semibold text-[#030712]">Passenger Name*</h2>
-                    <input type="text" placeholder="Enter your name " class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] text-[#03071266] mt-4 bg-[#F7F8F8]" >
+                    <input type="text" placeholder="Enter your name " class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] text-[#03071266] mt-4 bg-[#F7F8F8]" id="pName" disabled >
 
                     <h2 class="tex-[16px] font-semibold text-[#030712] mt-7">phone number*</h2>
-                    <input type="number" placeholder="Enter your phone number" class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] bg-[#F7F8F8] text-[#03071266] mt-4" >
+                    <input type="number" placeholder="Enter your phone number" class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] bg-[#F7F8F8] text-[#03071266] mt-4" id="pNum" disabled >
 
                     <h2 class="tex-[16px] font-semibold text-[#030712] mt-6">Email id</h2>
-                    <input type="email" placeholder="Enter your email id " class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] text-[#03071266] mt-4 bg-[#F7F8F8]" >
+                    <input type="email" placeholder="Enter your email id " class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] text-[#03071266] mt-4 bg-[#F7F8F8]" id="email" disabled>
 
-                    <button class="w-full h-16 bg-[#1DD100] rounded-2xl my-6 text-xl font-extrabold  text-white" disabled>Next</button>
+                    <button class="w-full h-16 bg-[#1DD100] rounded-2xl my-6 text-xl font-extrabold  text-white" disabled id="next">Next</button>
                     <div class="flex justify-around inter text-[#03071299] text-[16px] font-normal">
                         <a href="">Terms and Conditions</a>
                         <a href="">Cancellation Policy</a>
