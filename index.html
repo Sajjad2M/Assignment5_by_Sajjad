@@ -9,8 +9,8 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <body class="max-w-[425px] lg:max-w-[1440px] h-auto  min-w-[320px] lg:min-w-[1024px] bg-white raleway">
-        <!-- -------- -->
+    <body class="max-w-[425px] lg:max-w-[1440px] h-auto  min-w-[320px] lg:min-w-[1024px] bg-white raleway" id="bodyy">
+        <section id="full-body" class="">
         <nav class="flex items-center justify-between  lg:mt-12 mt-3  lg:max-w-full lg:mb-8 mb-6 mx-5 lg:mx-[135px] ">
          
             <h1 class="lg:font-extrabold font-medium text-[#030712] text-2xl lg:text-4xl raleway"> GoFast-Ticket</h1>
@@ -382,7 +382,7 @@
                     <p class="text-[16px] text-[rgb(3,7,18)] font-semibold inter " id="totalPrice">0</p>
                 </div>
                 <div class="mx-6 mt-4 relative ">
-                    <input type="text" placeholder="Have a coupon" class="w-full py-5 pl-6 rounded-xl border-2 " id="input1" disabled>
+                    <input type="text" placeholder="Have a coupon" class="w-full py-5 pl-6 rounded-xl border-2 font-semibold" id="input1" disabled>
                     <div class="absolute top-0 right-0 pt-2  pr-2">
                         <button class=" bg-[#1DD100] rounded-lg py-3 px-[18px] text-white text-lg font-semibold" id="app" disabled>Apply</button>
                     </div>
@@ -394,10 +394,10 @@
                 </div>
                
                 <div class="mt-14 inter ">
-                    <h2>Requirements given <span id="requ">0</span></h2>
-                    <h2>Requirements given <span id="requ1">0</span></h2>
-                    <h2>Total <span id="requT">0</span></h2>
-                    <h2 class="tex-[16px] font-semibold text-[#030712]">Passenger Name*</h2>
+                    <h2 class="hidden">Requirements given <span id="requ">0</span></h2>
+                    <h2 class="hidden">Requirements given <span id="requ1">0</span></h2>
+                    <h2 class="hidden">Total <span id="requT">0</span></h2>
+                    <h2 class="text-[16px] font-semibold text-[#030712]">Passenger Name*</h2>
                     <input type="text" placeholder="Enter your name " class="w-full py-[23px] pl-[22px] rounded-xl font-normal inter text-[16px] text-[#03071266] mt-4 bg-[#F7F8F8] psph" id="pName" disabled >
 
                     <h2 class="tex-[16px] font-semibold text-[#030712] mt-7">phone number*</h2>
@@ -413,20 +413,10 @@
                     </div>
 
                 </div>
-               
-
-
-
-
-                 </div>
+                </div>
                 
                </section>
-
-
-
-
-               
-         </section>
+            </section>
        
 
         </section>
@@ -448,12 +438,8 @@
                 GET IT ON <br>
                 <span class="font-semibold text-4xl">Google Play</span>
             </p>
-            
-
+            </div>
         </div>
-        
-       
-       </div>
        </section>
        <hr class="hr3 mt-12 ">
        <div class="flex justify-between mt-12">
@@ -470,6 +456,22 @@
        
 
   </footer>
+</section>
+<!-- -------page2 -->
+ <section class=" items-center grid justify-center bg-[#F2F1F1] w-full h-full hidden" id="body2">
+            <main class="bg-white grid  justify-center text-center roboto mt-40 mb-40 px-[86px] rounded-2xl">
+                <div class="flex justify-center mb-9 mt-14">
+                    <img src="images/success.png" alt="">
+                </div>
+                <h3 class="font-bold text-2xl text-[#27AE60] mb-9">Success</h3>
+                <h2 class="font-bold text-xl text-black">Thank you for Booking Our Bus Seats. <br>We are working hard to find the best service and deals for yo</h2>
+                <p class="font-light mt-3 text-xl text-[#4A4A4A]">Lorem ipsum dolor sit amet.</p>
+             <div>
+                <button class="bg-[#27AE60] font-semibold text-xl py-4 px-[104px] mt-[18px] rounded-[32px] text-white mb-16">Continue</button>
+             </div>
+
+            </main>
+ </section>
 
 
       

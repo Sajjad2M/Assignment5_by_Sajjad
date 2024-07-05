@@ -15,6 +15,7 @@ let input1 = ById('input1')
 let ticketCount = ById('sup')
 let eco2 = ById('eco2')
 let leftSeats = ById('fourty')
+let body2 = ById('body2')
           
 let placeHold = input1.attributes[1]
 let grand1 = ById('grand')
@@ -27,6 +28,7 @@ let next = ById('next')
 let requ = ById('requ')
 let requ1 = ById('requ1')
 let requT = ById('requT')
+let fullBody = ById('full-body')
 
 
 input1.addEventListener('keyup', function(e){
@@ -56,6 +58,7 @@ input1.addEventListener('keyup', function(e){
        else{
            grand1.innerText = 0;
            e.target.value = 'Invalid input!'
+           input1.classList.add('text-red-600')
          }
           
            
@@ -65,6 +68,7 @@ input1.addEventListener('keyup', function(e){
     })    
    input1.addEventListener('click', function(e){
     if(e.target.value === 'Invalid input!'){
+        input1.classList.remove('text-red-600')
         e.target.value = ''
     }
    })
@@ -138,14 +142,10 @@ number.addEventListener('keyup', function(e){
         requT.innerText = parseInt(requ.innerText)+ parseInt(requ1.innerText)
         if(requT.innerText === '3'){
             next.removeAttribute('disabled')
-           
-        }
-     
-    }else{
+         }}
+    else{
         requ.innerText = 0
-        
-
-    } })
+        }})
 
     passenger.addEventListener('keyup', function(e){
         let pass = e.target.value
@@ -154,13 +154,16 @@ number.addEventListener('keyup', function(e){
             requT.innerText = parseInt(requ.innerText)+ parseInt(requ1.innerText)
             if(requT.innerText === '3'){
                 next.removeAttribute('disabled')
-            }
-        }else{
+            }}
+            else{
             requ1.innerText = 0
          }})
     
    next.addEventListener('click', function(e){
-        console.log('next')
+        fullBody.classList.add('hidden')
+        body2.classList.remove('hidden')
+
+     
    })
 
  
