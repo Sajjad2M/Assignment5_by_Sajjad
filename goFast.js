@@ -29,6 +29,8 @@ let requ = ById('requ')
 let requ1 = ById('requ1')
 let requT = ById('requT')
 let fullBody = ById('full-body')
+let discount1 = ById('discount1')
+let discount2 = ById('discount2')
 
 
 input1.addEventListener('keyup', function(e){
@@ -49,11 +51,16 @@ input1.addEventListener('keyup', function(e){
             grand1.innerText = (totalPrice - ((totalPrice /100 ) * 15))
             input1.classList.add('hidden')
             apply.classList.add('hidden')
+            discount1.innerText = 'Discount'
+            discount2.innerText = 'BDT 330'
+            
           }
          else if(inputValue === 'Couple 20'){
              grand1.innerText = (totalPrice - ((totalPrice /100 ) * 20))
              input1.classList.add('hidden')
              apply.classList.add('hidden')
+               discount1.innerText = 'Discount'
+            discount2.innerText = 'BDT 440'
          }
        else{
            grand1.innerText = 0;

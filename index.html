@@ -219,11 +219,11 @@
                         </button>
                     </div>
                   
-                   <section class="flex gap-16 mt-6 w-full" >
+                   <section class="flex gap-16 mt-6 w-full text-[#03071280]" >
                     <section class="grid grid-cols-1 gap-8  inter">
                         <div class="flex gap-8 items-center">
                          <p class=" text-[#03071280] text-lg font-medium inter ">A</p>
-                         <button id="A1" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>A1</p></button>
+                         <button id="A1" class="bg-[#F7F8F8] w-[110px] h-14 rounded-xl btn40"><p>A1</p></button>
                          <button id="A2" class="bg-[#F7F8F8] w-28 h-14 rounded-xl btn40"><p>A2</p></button>
                         </div>
                 
@@ -379,16 +379,21 @@
                         
                     </div>
                    
-                    <p class="text-[16px] text-[rgb(3,7,18)] font-semibold inter " id="totalPrice">0</p>
+                    <h1 class="text-[#030712] font-semibold text-[16px] inter">BDT <span id="totalPrice" >0</span></h1>
                 </div>
-                <div class="mx-6 mt-4 relative ">
+                <div class="mx-6 mt-4 relative " id="">
+                    <div class="flex justify-between">
+                        <p class="text-[#030712] font-semibold text-[16px] inter" id="discount1"></p>
+                        <p id="discount2" class="text-[#030712] font-semibold text-[16px] inter"></p>
+                    </div>
+
                     <input type="text" placeholder="Have a coupon" class="w-full py-5 pl-6 rounded-xl border-2 font-semibold" id="input1" disabled>
                     <div class="absolute top-0 right-0 pt-2  pr-2">
                         <button class=" bg-[#1DD100] rounded-lg py-3 px-[18px] text-white text-lg font-semibold" id="app" disabled>Apply</button>
                     </div>
                     <div class="flex justify-between mt-6">
                         <p class="text-[#030712] font-semibold text-[16px] inter">Grand Total</p>
-                        <p id="grand" class="text-[#030712] font-semibold text-[16px] inter">0</p>
+                        <h1 class="text-[#030712] font-semibold text-[16px] inter">BDT <span id="grand" >0</span></h1>
                     </div>
                    
                 </div>
