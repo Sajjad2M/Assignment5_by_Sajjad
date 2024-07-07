@@ -41,9 +41,6 @@ input1.addEventListener('keyup', function(e){
         apply.removeAttribute('disabled')
 
      }
-     //else if(e.target.value === 'Invalid input!'){
-    
-    // }
 
     apply.addEventListener('click', function(){
 
